@@ -112,6 +112,8 @@
 
  );
 
+-- Create the Pharmacy table
+
  CREATE TABLE Pharmacy (
 
      credentialid INT PRIMARY KEY,
