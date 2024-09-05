@@ -11,6 +11,7 @@ driver_service = Service(ChromeDriverManager().install())
 # Uncomment the line below to specify the path to ChromeDriver locally
 # driver_service = Service('/path/to/your/chromedriver')
 
+# Ignore ssl errors
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--ignore-ssl-errors')
@@ -55,7 +56,7 @@ def scrape_table():
         if len(row_data) > len(columns):
             additional_columns = len(row_data) - len(columns)
             for i in range(additional_columns):
-                columns.append(f"Extra_Column_{i+1 + len(columns) - len(header_elements)}")
+                columns.append(f"Extra_Column_{i+1 + len(columns) - len(header_elements)}") # type: ignore
         
         # Ensure row length matches columns length by padding with empty strings
         while len(row_data) < len(columns):

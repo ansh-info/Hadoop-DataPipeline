@@ -9,8 +9,10 @@ import time
 driver_service = Service(ChromeDriverManager().install())
 
 # Uncomment the line below to specify the path to ChromeDriver locally
-# driver_service = Service('/path/to/your/chromedriver')
+# driver_service = Service('/path/to/your/chromedriver') ## -- chromedriver-mac-arm64/chromedriver
 
+
+# Ignore ssl errors
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--ignore-ssl-errors')
