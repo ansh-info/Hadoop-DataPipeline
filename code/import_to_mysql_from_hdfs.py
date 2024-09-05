@@ -5,7 +5,7 @@ from hdfs import InsecureClient
 from sqlalchemy import text
 
 # HDFS and MySQL connection details
-hdfs_host = 'master-node'  # e.g., 'localhost'
+hdfs_host = 'master-node'  # e.g., 'localhost' -- check the spark folder Config
 hdfs_port = 9870
 mysql_host = 'Local IP'
 mysql_user = 'root'
@@ -17,7 +17,7 @@ mysql_port = 3306
 hdfs_client = InsecureClient('http://{TailscaleIP}:{Port}', user='hadoop')
 
 # List files in HDFS directory
-hdfs_path = '/home/hadoop/data/nameNode/dataset'
+hdfs_path = '/home/hadoop/data/nameNode/dataset' ## Your hdfs nameNode Path
 files = hdfs_client.list(hdfs_path)
 print("Files in HDFS directory:", files)
 
