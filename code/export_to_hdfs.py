@@ -6,9 +6,9 @@ from hdfs import InsecureClient
 hdfs_client = InsecureClient('http://{TailscaleIP}:{Port}', user='hadoop')
 
 # Path to the folder containing CSV files on your Mac
-local_csv_folder = '/path to your/dataset'
+local_csv_folder = '/path to your/dataset' ## Define your local storage path
 # Path in HDFS where you want to store the files
-hdfs_target_folder = '/home/hadoop/data/nameNode/dataset'
+hdfs_target_folder = '/home/hadoop/data/nameNode/dataset' ## Your Hdfs nameNode path
 
 # Ensure the HDFS target folder exists
 hdfs_client.makedirs(hdfs_target_folder)
