@@ -7,6 +7,13 @@ This project involves setting up a data engineering pipeline to collect, store, 
 - **Objective:** Analyze Property and Locality data to derive meaningful insights.
 - **Scope:** Collect data through web scraping, store in HDFS, process using Hadoop, and analyze with MySQL.
 
+# Video
+
+Here is a demo video of the Pipeline:
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/0sdQdd7E67o" title="Hadoop-Pipeline" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ## Setup and Environment
 ### Virtual Machines Setup
 - **Step:** Installed Ubuntu on VirtualBox for each VM.
