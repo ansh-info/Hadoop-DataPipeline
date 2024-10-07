@@ -11,8 +11,7 @@ This project involves setting up a data engineering pipeline to collect, store, 
 
 Here is a demo video of the Pipeline:
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/0sdQdd7E67o" title="Hadoop-Pipeline" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+[Watch the demo video on YouTube](https://www.youtube.com/watch?v=0sdQdd7E67o)
 
 ## Setup and Environment
 ### Virtual Machines Setup
